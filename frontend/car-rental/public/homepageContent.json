@@ -1,0 +1,41 @@
+{
+  "carCategories": [
+    {
+      "title": "Dynamiczne",
+      "description": "Samochody dynamiczne łączą w sobie szybkość z precyzją, oferując niezapomniane wrażenia z jazdy. Ich zaawansowane silniki i lekkie konstrukcje pozwalają na błyskawiczne przyspieszenie i zwinne pokonywanie zakrętów",
+      "img": "./dynamic.jpg"
+    },
+    {
+      "title": "Komfortowe",
+      "description": "Komfortowe samochody zapewniają wyjątkowy poziom luksusu i wygody, idealne do długich podróży. Bogate wyposażenie wnętrza, ciche silniki i innowacyjne technologie sprawiają, że każda chwila spędzona w nich to czysta przyjemność",
+      "img": "./comfort.jpg"
+    },
+    {
+      "title": "Muscle-car",
+      "description": "Muscle-cary to ikony amerykańskiego stylu, które łączą potężne silniki z agresywną stylistyką. Te samochody przyciągają uwagę swoimi osiągami i charakterystycznym brzmieniem silnika, oferując niezapomniane przeżycia na drodze",
+      "img": "./muscle-car.jpg"
+    },
+    {
+      "title": "Klasyki",
+      "description": "Klasyczne samochody to prawdziwe dzieła sztuki motoryzacyjnej, które przenoszą nas w czasie. Ich niepowtarzalny design i historyczne znaczenie sprawiają, że są cenione przez kolekcjonerów i miłośników motoryzacji na całym świecie",
+      "img": "./classic.jpg"
+    }
+  ],
+  "infoBoxes": [
+    {
+      "title": "Wypełnij kwestionariusz",
+      "description": "Zarezerwój swój samochód, zadzwoń lub napisz maila - metoda zależy tylko od Ciebie! Rezerwacja zajmnie Ci chwilę.",
+      "icon": "FaWpforms"
+    },
+    {
+      "title": "Poczekaj na odpowiedź",
+      "description": "Musimy teraz potwierdzić rezerwację i przygotować samochód. To może zająć chwilę ale dokładamy wszelkich starań aby nasi klienci byli całkowicie zadowoleni z samochodu.",
+      "icon": "FiClock"
+    },
+    {
+      "title": "Odbierz auto",
+      "description": "Wszystko gotowe, teraz możesz wsiadać i jechać dokąd tylko pragniesz. Życzymy szerokiej drogi!",
+      "icon": "BsPersonFillCheck"
+    }
+  ]
+}

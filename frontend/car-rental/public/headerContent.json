@@ -1,18 +1,17 @@
 {
   "companyName": "CarRenting",
-  "phoneNumber": "+48 123 123 123",
   "navigation": [
     {
-      "label": "Wynajem auta",
-      "href": "/"
+      "label": "Samochody",
+      "href": "/cars"
     },
     {
-      "label": "Sprzedaż samochodów",
-      "href": "/sell"
+      "label": "Jak to działa",
+      "href": "/how-it-works"
     },
     {
-      "label": "Flota",
-      "href": "/car-fleet"
+      "label": "Dlaczego my?",
+      "href": "/why-us"
     },
     {
       "label": "Blog",

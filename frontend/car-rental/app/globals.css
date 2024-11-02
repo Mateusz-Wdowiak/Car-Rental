@@ -14,8 +14,16 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--foreground);
     background: var(--background);
     font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.header {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
