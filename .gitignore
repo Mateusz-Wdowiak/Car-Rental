@@ -1,0 +1,11 @@
+*.eslintrc.js
+*.prettierrc
+*.eslintrc.json
+node_modules/
+/dist
+/build
+/public/*.svg
+.env
+tsconfig.json
+package-lock.json
+tailwind.config.ts

@@ -1,0 +1,27 @@
+{
+  "title": "Skontaktuj się z nami",
+  "callUs": "Zadzwoń do nas",
+  "hotline": "Infolinia",
+  "mainMail": "mail@abc.com",
+  "mainPhone": "+48 123 123 123",
+  "hotlineOpen": "Infolinia czynna 24/7. Godziny otwarcia biura:",
+  "hotlineOpenText": "Poniedziałek - Piątek: 8:00 - 18:00",
+  "marketing": "Marketing i współprace:",
+  "marketingEmail": "marketing.email@abc.com",
+  "addressTitle": "Adres wypożyczalni:",
+  "address": {
+    "street": "Street 111",
+    "zipCode": "11-222 City"
+  },
+  "contactEmail": "Twój adres e-mail*",
+  "contactPhone": "Twój numer telefonu*",
+  "contactText": "Treść wiadomości",
+  "processingPersonalData": {
+    "p": "Zgadzam się na wykorzystanie danych osobowych zgodnie z",
+    "span": "Polityką Prywatności."
+  },
+  "instagram": {
+    "name": "instagram",
+    "profile": "@nazwaInstagrama"
+  }
+}
