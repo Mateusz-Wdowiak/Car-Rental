@@ -11,7 +11,6 @@ import { MdOutlinePerson } from 'react-icons/md';
 const Header = () => {
   const [headerContent, setHeaderContent] = useState<HeaderContent | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
-
   useEffect(() => {
     const fetchHeaderContent = async () => {
       try {
@@ -19,6 +18,7 @@ const Header = () => {
         if (!response.ok) throw new Error('Error fetching header content');
         const data: HeaderContent = await response.json();
         setHeaderContent(data);
+
       } catch (error) {
         console.error('Error fetching header content:', error);
       }

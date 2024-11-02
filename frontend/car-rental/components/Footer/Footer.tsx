@@ -1,4 +1,5 @@
 'use client';
+
 import { FaFacebook, FaInstagramSquare, FaYoutube } from 'react-icons/fa';
 import Link from 'next/link';
 
@@ -18,3 +19,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
