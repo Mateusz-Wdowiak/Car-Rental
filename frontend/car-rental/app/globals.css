@@ -27,3 +27,38 @@ body {
 .header {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d1d5db;
+    border-radius: 4px;
+    background-color: white;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-color: #4ade80;
+    border: none;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "✔";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    color: white;
+}

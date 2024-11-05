@@ -13,15 +13,18 @@
     "street": "Street 111",
     "zipCode": "11-222 City"
   },
-  "contactEmail": "Twój adres e-mail*",
-  "contactPhone": "Twój numer telefonu*",
+  "contactPhone": "Twój numer telefonu",
+  "contactPhonePlaceholder": "Wpisz swój numer telefonu...",
+  "contactEmail": "Twój adres e-mail",
+  "contactEmailPlaceholder": "Wpisz swój adres e-mail...",
   "contactText": "Treść wiadomości",
+  "contactTextPlaceholder": "Wpisz treść wiadomości...",
   "processingPersonalData": {
     "p": "Zgadzam się na wykorzystanie danych osobowych zgodnie z",
     "span": "Polityką Prywatności."
   },
   "instagram": {
-    "name": "instagram",
+    "name": "Instagram",
     "profile": "@nazwaInstagrama"
   }
 }

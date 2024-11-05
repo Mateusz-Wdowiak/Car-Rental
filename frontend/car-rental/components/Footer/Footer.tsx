@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="w-full text-white bg-gray-800 py-6 relative">
+    <div className="w-full text-white bg-zinc-800 py-6 relative">
       <p className="text-center">
         Wszelkie prawa zastrzeżone. <span className="text-lime-600">&#169; 2024 Mateusz Wdowiak.</span>
       </p>

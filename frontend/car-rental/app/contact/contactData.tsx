@@ -1,7 +1,7 @@
 import contactContent from '@/public/contactContent.json';
 
 export const contactData = [
-  { label: 'Call us', value: contactContent.callUs, className: 'my-5' },
+  { label: 'Call us', value: contactContent.callUs, className: 'mb-5' },
   { label: 'Hotline', value: contactContent.hotline, className: 'font-bold' },
   { label: 'Main Mail', value: contactContent.mainMail, className: '' },
   { label: 'Main Phone', value: contactContent.mainPhone, className: '' },
