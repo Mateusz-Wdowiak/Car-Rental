@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Inject, Logger, Post } from '@nestjs/common';
 import { Db, ObjectId } from 'mongodb';
-import { Car } from './car.model';
+import { Car } from '../car.model';
 
 @Controller('car')
 export class CarController {

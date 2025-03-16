@@ -1,13 +1,14 @@
 import { Module } from '@nestjs/common';
 import { MongoClient } from 'mongodb';
 import { AppController } from './app.controller';
-import { CarController } from './test/car.controller';
+import { CarController } from './cars/controllers/car.controller';
 import { AppService } from './app.service';
-import { BlogController } from './modules/blogs/blog.controller';
+import { AuthModule } from './modules/auth/auth.module';
+import { BlogModule } from './modules/blogs/blog.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController, CarController, BlogController],
+  imports: [AuthModule, BlogModule],
+  controllers: [AppController, CarController],
   providers: [
     AppService,
     {

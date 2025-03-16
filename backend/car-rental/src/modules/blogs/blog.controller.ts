@@ -9,10 +9,11 @@ import {
 } from '@nestjs/common';
 import { CreateBlogDto } from './dto/create-blog.dto';
 import { UpdateBlogDto } from './dto/update-blog.dto';
+import { BlogServiceImplementation } from './services/blog.service.implementation';
 
 @Controller('blog')
 export class BlogController {
-  constructor(private readonly blogService: BlogService) {}
+  constructor(private readonly blogService: BlogServiceImplementation) {}
 
   @Get('/:id')
   getBlog(@Param('id') id: string) {
@@ -26,12 +27,16 @@ export class BlogController {
 
   @Post('/:id')
   createBlog(@Param('id') id: string, @Body() createBlogDto: CreateBlogDto) {
-    return this.blogService.createBlog(id, createBlogDto);
+    // const createBlog: CreateBlog =
+    //   // this.blogMapper.mapCreateBlogDtoToCreateBlog(createBlogDto);
+    // return this.blogService.createBlog(id, createBlog); //TODO mapper przed tym
   }
 
   @Put('/:id')
   updateBlog(@Param('id') id: string, @Body() updateBlogDto: UpdateBlogDto) {
-    return this.blogService.updateBlog(id, updateBlogDto);
+    // const updateBlog: UpdateBlog =
+    // this.blogMapper.mapUpdateBlogDtoToUpdateBlog(updateBlogDto);
+    // return this.blogService.updateBlog(id, updateBlog); //TODO mapper przed tym
   }
 
   @Delete('/:id')
