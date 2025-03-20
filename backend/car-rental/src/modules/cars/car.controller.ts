@@ -13,6 +13,7 @@ import { CreateCar } from './models/create-car.model';
 import { UpdateCarDto } from './dto/update-car.dto';
 import { UpdateCar } from './models/update-car.model';
 import { CarDtoMapperImplementation } from './dto/car-dto.mapper.implementation';
+import { CarServiceImplementation } from './services/car.service.implementation';
 
 @Controller('car')
 export class CarController {
@@ -22,13 +23,13 @@ export class CarController {
   ) {}
 
   @Get('::id')
-  getCar(@Param('id') id: string) {
+  getCar(@Param('id') id: string): CarDto {
     return this.carDtoMapper.mapCarToCarDto(this.carService.getCar(id));
   }
 
   @Get('/list')
-  getCarList() {
-    return this.carDtoMapper.mapCarsToCarsDto(this.carService.getCarsList());
+  getCarList(): CarDto[] {
+    return this.carDtoMapper.mapCarsToCarsDto(this.carService.getCarList());
   }
 
   @Post('')
@@ -53,7 +54,7 @@ export class CarController {
   }
 
   @Delete('::id')
-  deleteCar(@Param('id') id: string) {
+  deleteCar(@Param('id') id: string): void {
     return this.carService.deleteCar(id);
   }
 }

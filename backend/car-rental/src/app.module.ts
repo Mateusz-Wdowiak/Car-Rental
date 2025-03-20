@@ -12,12 +12,13 @@ import { BlogModule } from './modules/blogs/blog.module';
   providers: [
     AppService,
     {
-      provide: 'DATABASE_CONNECTION',
+      provide: 'MONGO_CLIENT',
       useFactory: async () => {
         const client = new MongoClient(process.env.DATABASE_URL);
         try {
           await client.connect();
-          return client.db('car-rental');
+          console.log('Połączono z MongoDB');
+          return client;
         } catch (error) {
           console.error('Error connecting to MongoDB:', error);
           throw error;
@@ -25,6 +26,6 @@ import { BlogModule } from './modules/blogs/blog.module';
       },
     },
   ],
-  exports: ['DATABASE_CONNECTION'],
+  exports: ['MONGO_CLIENT'],
 })
 export class AppModule {}
