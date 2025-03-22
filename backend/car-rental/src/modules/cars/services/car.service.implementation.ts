@@ -14,14 +14,14 @@ export class CarServiceImplementation implements CarService {
   }
 
   async createCar(car: Car): Promise<Car> {
-    this.carRepository.createCar(car);
+    return await this.carRepository.createCar(car);
   }
 
   async updateCar(car: Car): Promise<Car> {
-    this.carRepository.updateCar(car);
+    return await this.carRepository.updateCar(car);
   }
 
-  async deleteCar(id: string): Promise<void> {
-    this.carRepository.deleteCar(id);
+  async deleteCar(id: string): Promise<Boolean> {
+    return await this.carRepository.deleteCar(id);
   }
 }

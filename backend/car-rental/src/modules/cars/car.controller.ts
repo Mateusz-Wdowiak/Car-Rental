@@ -23,17 +23,17 @@ export class CarController {
   ) {}
 
   @Get('::id')
-  getCar(@Param('id') id: string): CarDto {
+  getCar(@Param('id') id: string): Promise<CarDto> {
     return this.carDtoMapper.mapCarToCarDto(this.carService.getCar(id));
   }
 
   @Get('/list')
-  getCarList(): CarDto[] {
+  getCarList(): Promise<CarDto[]> {
     return this.carDtoMapper.mapCarsToCarsDto(this.carService.getCarList());
   }
 
   @Post('')
-  createCar(@Body() createCarDto: CreateCarDto): CarDto {
+  createCar(@Body() createCarDto: CreateCarDto): Promise<CarDto> {
     const createCar: CreateCar =
       this.carDtoMapper.mapCreateCarDtoToCreateCar(createCarDto);
     return this.carDtoMapper.mapCarToCarDto(
@@ -45,7 +45,7 @@ export class CarController {
   updateCar(
     @Param('id') id: string,
     @Body() updateCarDto: UpdateCarDto
-  ): CarDto {
+  ): Promise<CarDto> {
     const updateCar: UpdateCar =
       this.carDtoMapper.mapUpdateCarDtoToUpdateCar(updateCarDto);
     return this.carDtoMapper.mapCarToCarDto(
@@ -54,7 +54,7 @@ export class CarController {
   }
 
   @Delete('::id')
-  deleteCar(@Param('id') id: string): void {
+  deleteCar(@Param('id') id: string): Promise<Boolean> {
     return this.carService.deleteCar(id);
   }
 }

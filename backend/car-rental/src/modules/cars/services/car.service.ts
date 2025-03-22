@@ -11,5 +11,5 @@ export interface CarService {
 
   updateCar(car: UpdateCar): Promise<Car>;
 
-  deleteCar(id: string): Promise<void>;
+  deleteCar(id: string): Promise<Boolean>;
 }

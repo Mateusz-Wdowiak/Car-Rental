@@ -10,6 +10,7 @@ export class CarParametersEntity {
 }
 
 export class CarEntity {
+  _id: string;
   brand: string;
   model: string;
   year: string;
