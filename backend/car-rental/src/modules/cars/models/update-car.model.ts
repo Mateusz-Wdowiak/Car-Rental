@@ -10,6 +10,7 @@ export interface UpdateCarParameters {
 }
 
 export interface UpdateCar {
+  _id: string;
   brand: string;
   model: string;
   year: string;

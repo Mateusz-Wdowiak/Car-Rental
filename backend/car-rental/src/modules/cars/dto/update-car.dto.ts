@@ -36,7 +36,7 @@ export class UpdateCarParametersDto {
 
 export class UpdateCarDto {
   @IsString()
-  id!: string;
+  _id!: string;
 
   @IsString()
   @IsNotEmpty()

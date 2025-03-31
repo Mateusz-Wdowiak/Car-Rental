@@ -9,7 +9,7 @@ export interface CarService {
 
   createCar(car: CreateCar): Promise<Car>;
 
-  updateCar(car: UpdateCar): Promise<Car>;
+  updateCar(id: string, car: UpdateCar): Promise<Car>;
 
   deleteCar(id: string): Promise<Boolean>;
 }

@@ -23,38 +23,40 @@ export class CarController {
   ) {}
 
   @Get('::id')
-  getCar(@Param('id') id: string): Promise<CarDto> {
-    return this.carDtoMapper.mapCarToCarDto(this.carService.getCar(id));
+  async getCar(@Param('id') id: string): Promise<CarDto> {
+    return this.carDtoMapper.mapCarToCarDto(await this.carService.getCar(id));
   }
 
   @Get('/list')
-  getCarList(): Promise<CarDto[]> {
-    return this.carDtoMapper.mapCarsToCarsDto(this.carService.getCarList());
+  async getCarList(): Promise<CarDto[]> {
+    return this.carDtoMapper.mapCarsToCarsDto(
+      await this.carService.getCarList()
+    );
   }
 
   @Post('')
-  createCar(@Body() createCarDto: CreateCarDto): Promise<CarDto> {
+  async createCar(@Body() createCarDto: CreateCarDto): Promise<CarDto> {
     const createCar: CreateCar =
       this.carDtoMapper.mapCreateCarDtoToCreateCar(createCarDto);
     return this.carDtoMapper.mapCarToCarDto(
-      this.carService.createCar(createCar)
+      await this.carService.createCar(createCar)
     );
   }
 
   @Put('')
-  updateCar(
+  async updateCar(
     @Param('id') id: string,
     @Body() updateCarDto: UpdateCarDto
   ): Promise<CarDto> {
     const updateCar: UpdateCar =
       this.carDtoMapper.mapUpdateCarDtoToUpdateCar(updateCarDto);
     return this.carDtoMapper.mapCarToCarDto(
-      this.carService.updateCar(id, updateCar)
+      await this.carService.updateCar(id, updateCar)
     );
   }
 
   @Delete('::id')
-  deleteCar(@Param('id') id: string): Promise<Boolean> {
+  async deleteCar(@Param('id') id: string): Promise<Boolean> {
     return this.carService.deleteCar(id);
   }
 }

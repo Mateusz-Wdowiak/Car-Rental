@@ -3,7 +3,9 @@ import { CarDto } from './car.dto';
 import { CreateCarDto } from './create-car.dto';
 import { UpdateCarDto } from './update-car.dto';
 import { CarDtoMapper } from './car-dto.mapper';
+import { Injectable } from '@nestjs/common';
 
+@Injectable()
 export class CarDtoMapperImplementation implements CarDtoMapper {
   constructor() {}
 
@@ -37,7 +39,7 @@ export class CarDtoMapperImplementation implements CarDtoMapper {
 
   mapUpdateCarDtoToUpdateCar(updateCarDto: UpdateCarDto): UpdateCarDto {
     return {
-      id: updateCarDto.id,
+      _id: updateCarDto._id,
       brand: updateCarDto.brand,
       model: updateCarDto.model,
       year: updateCarDto.year,
