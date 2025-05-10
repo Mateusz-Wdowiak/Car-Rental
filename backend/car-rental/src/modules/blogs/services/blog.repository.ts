@@ -2,7 +2,7 @@ import { Blog } from '../model/blog';
 import { CreateBlog } from '../model/create-blog';
 import { UpdateBlog } from '../model/update-blog';
 
-export interface BlogService {
+export interface BlogRepository {
   getBlogList(): Promise<Blog[]>;
 
   getBlog(id: string): Promise<Blog>;

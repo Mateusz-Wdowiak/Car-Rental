@@ -20,6 +20,7 @@ services:
       - "3000:3000"
     environment:
       - DATABASE_URL=mongodb://root:qwerty123@mongo:27017/car-rental?authSource=admin
+      - JWT_SECRET=+fZ+lJo1l+MCH6jejFwLmGoRnWvD0gO5EM4zZFnoadk=
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
